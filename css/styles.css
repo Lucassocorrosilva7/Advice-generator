@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/manrope/v12/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk59E-_F.ttf) format('truetype');
+}
+
+:root{
+  --clr-primary: hsl(218, 23%, 16%);
+  --clr-secondary: hsl(217, 19%, 24%);
+  --clr-third: hsl(150, 100%, 66%);
+}
+
+* {
+  box-sizing: inherit;
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--clr-primary);
+  font-size: 18px;
+  font-family: 'Manrope', sans-serif;
+}
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.card {
+  max-width: 540px;
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  background-color: var(--clr-secondary);
+  position: relative;
+  border-radius: 1rem;
+}
+.card__id {
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+.card__result {
+  margin-top: 3rem;
+  font-size: 28px;
+  font-weight: 800;
+  width: 70%;
+  height: 100%;
+  text-align: center;
+  color: hsl(193, 38%, 86%);
+}
+.card__divider {
+ padding: 4rem;
+}
+.card__btn {
+  position: absolute;
+  bottom: -7%;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
+}
