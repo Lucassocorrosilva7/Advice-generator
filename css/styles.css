@@ -39,6 +39,7 @@ button {
   justify-content: center;
   min-height: 100vh;
 }
+
 .card {
   margin: 2rem;
   max-width: 38rem;
@@ -78,4 +79,9 @@ button {
   height: 4rem;
   border-radius: 50%;
   background-color: var(--clr-third);
+  transition: box-shadow 250ms;
+}
+
+.card__btn:hover{
+  box-shadow: 0 0 20px hsl(150, 100%, 66%);
 }
