@@ -41,9 +41,9 @@ button {
 }
 
 .card {
-  margin: 2rem;
+  margin: 0 auto;
   max-width: 38rem;
-  width: 100%;
+  width: 90%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -64,14 +64,26 @@ button {
   font-size: 28px;
   font-weight: 800;
   width: 70%;
-  height: 100%;
   text-align: center;
   color: var(--clr-gray);
 }
 .card__divider {
-  width: 100%;
  padding: 4rem;
 }
+
+.desktop{
+  display: none;
+}
+
+@media screen and (min-width:768px) {
+  .mobile {
+    display: none;
+  }
+  .desktop{
+    display: block;
+  }
+}
+
 .card__btn {
   position: absolute;
   bottom: -7%;
