@@ -14,7 +14,7 @@ const fetchAdvice = async () => {
   const response  = await fetch(url);
   const data = await response.json();
   resultId.textContent = data.slip.id;
-  result.textContent = data.slip.advice;
+  result.textContent = `"${data.slip.advice}"`;
  } catch (error) {
   console.log(error)
  }
